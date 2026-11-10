@@ -1,0 +1,19 @@
+#art {
+  cursor: crosshair;
+  touch-action: none;
+}
+
+#art:focus-visible {
+  outline: 1px dashed var(--charcoal);
+  outline-offset: -5px;
+}
+
+@media (max-width: 650px) {
+  .transport {
+    grid-template-columns: auto 1fr;
+    row-gap: 3px;
+    padding-block: 10px;
+  }
+
+  #reset { grid-row: span 2; }
+}

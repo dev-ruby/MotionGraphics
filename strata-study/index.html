@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <title>STRATA — Form Studies 08</title>
+  <link rel="stylesheet" href="../shared/style.css">
+  <script src="../shared/player.js" defer></script>
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <main class="folio">
+    <header class="masthead mono">
+      <p class="signature">
+        <svg width="17" height="17" viewBox="0 0 18 18" aria-hidden="true">
+          <path fill="currentColor" d="M0 0h8v8H0zM10 10h8v8h-8zM10 0l8 8h-8zM0 10h8v8z"/>
+        </svg>
+        Form studies
+      </p>
+      <p>Motion plate <span class="slash">/</span> 008</p>
+    </header>
+
+    <section class="plate" aria-labelledby="title">
+      <div class="heading">
+        <h1 id="title">STRATA<span aria-hidden="true">.</span></h1>
+        <p class="subtitle">Fifteen layers of the same turn.</p>
+      </div>
+
+      <figure>
+        <figcaption class="plate-label mono">
+          <span>Fig. 08 <span class="slash">/</span> Stacked time</span>
+          <span>10 s <span class="slash">/</span> Loop</span>
+        </figcaption>
+        <div class="stage">
+          <canvas id="art" role="img" aria-label="A hollow column separates into fifteen horizontal plates. Each plate turns at a different point in the same rotation. The layers twist in one direction, then the other, before settling back together."></canvas>
+          <p class="stage-message mono" id="stage-message" hidden></p>
+        </div>
+      </figure>
+
+      <div class="transport">
+        <button id="playback" type="button" aria-label="Pause" title="Pause (Space)" disabled>
+          <svg class="play-icon" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path fill="currentColor" d="M3 1l10 6-10 6z"/></svg>
+          <svg class="pause-icon" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path fill="currentColor" d="M3 2h3v10H3zM8 2h3v10H8z"/></svg>
+        </button>
+        <div class="timeline">
+          <div class="rail" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <input id="seek" type="range" min="0" max="10" value="0" step="0.01" aria-label="Playback position in seconds" disabled>
+        </div>
+        <p class="time mono"><span id="time">00.0</span> <span class="slash">/</span> 10.0</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

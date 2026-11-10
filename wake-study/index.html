@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <title>WAKE — Form Studies 09</title>
+  <link rel="stylesheet" href="../shared/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <main class="folio">
+    <header class="masthead mono">
+      <p class="signature">
+        <svg width="17" height="17" viewBox="0 0 18 18" aria-hidden="true">
+          <path fill="currentColor" d="M0 0h8v8H0zM10 10h8v8h-8zM10 0l8 8h-8zM0 10h8v8z"/>
+        </svg>
+        Form studies
+      </p>
+      <p>Motion plate <span class="slash">/</span> 009</p>
+    </header>
+
+    <section class="plate" aria-labelledby="title">
+      <div class="heading">
+        <h1 id="title">WAKE<span aria-hidden="true">.</span></h1>
+        <p class="subtitle">An engraved surface that remembers your touch.</p>
+      </div>
+
+      <figure>
+        <figcaption class="plate-label mono">
+          <span>Fig. 09 <span class="slash">/</span> Surface relief</span>
+          <span>Live <span class="slash">/</span> Interactive</span>
+        </figcaption>
+        <div class="stage">
+          <canvas id="art" tabindex="0" role="img" aria-label="An interactive striped surface" aria-describedby="gesture-guide key-guide"></canvas>
+          <p class="stage-message mono" id="stage-message" hidden></p>
+        </div>
+      </figure>
+
+      <div class="transport">
+        <button id="reset" type="button" aria-label="Reset surface" title="Reset surface" disabled>
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 7a5.5 5.5 0 1 1 1.8 5.1M2.5 2.8V7h4.2" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="mono" id="gesture-guide">Move or drag to bend <span class="slash">/</span> Click or tap to ripple</p>
+        <p class="mono" id="key-guide">Arrow keys <span class="slash">/</span> Space</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
